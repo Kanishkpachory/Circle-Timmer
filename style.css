@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* This prevents vertical scrolling */
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+    /* overflow-y: hidden; */
+}
+
+.circle{
+    position: absolute;
+    top: 50%;
+    left: -100vh;
+    transform: translate(0,-50%) rotate(100deg);
+    border-radius: 50%;
+    height: 200vh;
+    width: 200vh;
+    /* background-color: red; */
+    border: 5px solid #f1f1f1;
+}
+
+.strip{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    /* background-color: yellow; */
+    left: 50%;
+    top: 46%;   
+    transform: translate(0,50%);
+    transform-origin: 0 50%;
+}
+
+.str1{
+    transform: translate(0,50%) rotate(-20deg);
+}
+.str2{
+    transform: translate(0,50%) rotate(-10deg);
+}
+.str4{
+    transform: translate(0,50%) rotate(10deg);
+}
+.str5{
+    transform: translate(0,50%) rotate(20deg);
+}
+
+.first{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /* background-color: green; */
+}
+
+.smcircle{
+    position: absolute;
+    right: -1.3vw;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-radius: 50%;
+    width: .6vw;
+    height: .6vw;
+    background-color: #7777;
+    
+}
+
+.sec{
+    opacity: .4;
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    margin-left: 40px;
+}
+
+.sec h1{
+    font-size: 1.8vw;
+}
+
+.sec h4{
+    font-size: 1.2vw;
+    opacity: 0.5;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 5%;
+    height: 20%;
+    /* background-color: red; */
+    right: 3%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.mncircle{
+    border-radius: 50%;
+    width: 1vw;
+    height: 1vw;
+    opacity: .08;
+    background-color: rgb(0, 0, 0);
+}
+
+
